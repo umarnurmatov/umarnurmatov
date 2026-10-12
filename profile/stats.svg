@@ -1,15 +1,15 @@
 
       <svg
-        width="450"
-        height="165"
-        viewBox="0 0 450 165"
+        width="300"
+        height="135"
+        viewBox="0 0 300 135"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Umar Nurmatov&#39;s GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 3, Total Commits  (last year) : 332, Total PRs: 6, Total Issues: 1, Contributed to (last year): 2</desc>
+        <title id="titleId"></title>
+        <desc id="descId"></desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -21,6 +21,22 @@
             .header { font-size: 15.5px; }
           }
           
+    @keyframes slideInAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: calc(100%-100px);
+      }
+    }
+    @keyframes growWidthAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
     .stat {
       font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #9f9f9f;
     }
@@ -28,56 +44,23 @@
       /* Selector detects Firefox */
       .stat { font-size:12px; }
     }
+    .bold { font-weight: 700 }
+    .lang-name {
+      font: 400 11px "Segoe UI", Ubuntu, Sans-Serif;
+      fill: #9f9f9f;
+    }
     .stagger {
       opacity: 0;
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
-    .rank-text {
-      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #9f9f9f;
-      animation: scaleInAnimation 0.3s ease-in-out forwards;
+    #rect-mask rect{
+      animation: slideInAnimation 1s ease-in-out forwards;
     }
-    .rank-percentile-header {
-      font-size: 14px;
+    .lang-progress{
+      animation: growWidthAnimation 0.6s ease-in-out forwards;
     }
-    .rank-percentile-text {
-      font-size: 16px;
-    }
+    .progress-background { fill: #ddd; }
     
-    .not_bold { font-weight: 400 }
-    .bold { font-weight: 700 }
-    .icon {
-      fill: #79ff97;
-      display: none;
-    }
-
-    .rank-circle-rim {
-      stroke: #fff;
-      fill: none;
-      stroke-width: 6;
-      opacity: 0.2;
-    }
-    .rank-circle {
-      stroke: #fff;
-      stroke-dasharray: 250;
-      fill: none;
-      stroke-width: 6;
-      stroke-linecap: round;
-      opacity: 0.8;
-      transform-origin: -10px 8px;
-      transform: rotate(-90deg);
-      animation: rankAnimation 1s forwards ease-in-out;
-    }
-    
-    @keyframes rankAnimation {
-      from {
-        stroke-dashoffset: 251.32741228718345;
-      }
-      to {
-        stroke-dashoffset: 207.17082366791686;
-      }
-    }
-  
-  
           
 
           
@@ -117,7 +100,7 @@
           rx="4.5"
           height="99%"
           stroke="#e4e2e2"
-          width="449"
+          width="299"
           fill="#151515"
           stroke-opacity="1"
         />
@@ -129,75 +112,120 @@
           transform="translate(0, 25)"
         >
           
-    <g data-testid="rank-circle"
-          transform="translate(365, 47.5)">
-        <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
-        <circle class="rank-circle" cx="-10" cy="8" r="40" />
-        <g class="rank-text">
-          
-        <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
-          C+
-        </text>
+    <svg data-testid="lang-items" x="25">
       
-        </g>
-      </g>
-    <svg x="0" y="0">
-      <g transform="translate(0, 0)">
-    <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
+  
+      <mask id="rect-mask">
+          <rect x="0" y="0" width="250" height="8" fill="white" rx="5"/>
+        </mask>
+        
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="0"
+          y="0"
+          width="132.82"
+          height="8"
+          fill="#555555"
+        />
       
-      <text class="stat  bold"  y="12.5">Total Stars Earned:</text>
-      <text
-        class="stat  bold"
-        x="204.01"
-        y="12.5"
-        data-testid="stars"
-      >3</text>
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="132.82"
+          y="0"
+          width="69.31"
+          height="8"
+          fill="#f34b7d"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="202.13"
+          y="0"
+          width="16.3"
+          height="8"
+          fill="#6E4C13"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="218.43"
+          y="0"
+          width="14.16"
+          height="8"
+          fill="#427819"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="232.59"
+          y="0"
+          width="11.96"
+          height="8"
+          fill="#DAE1C2"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="244.55"
+          y="0"
+          width="15.46"
+          height="8"
+          fill="#b2b7f8"
+        />
+      
+      
+    <g transform="translate(0, 25)">
+      <g transform="translate(0, 0)"><g transform="translate(0, 0)">
+    <g class="stagger" style="animation-delay: 450ms">
+      <circle cx="5" cy="6" r="5" fill="#555555" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        C 53.13%
+      </text>
     </g>
   </g><g transform="translate(0, 25)">
-    <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
-      
-      <text class="stat  bold"  y="12.5">Total Commits (last year):</text>
-      <text
-        class="stat  bold"
-        x="204.01"
-        y="12.5"
-        data-testid="commits"
-      >332</text>
+    <g class="stagger" style="animation-delay: 600ms">
+      <circle cx="5" cy="6" r="5" fill="#f34b7d" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        C++ 27.72%
+      </text>
     </g>
   </g><g transform="translate(0, 50)">
-    <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
-      
-      <text class="stat  bold"  y="12.5">Total PRs:</text>
-      <text
-        class="stat  bold"
-        x="204.01"
-        y="12.5"
-        data-testid="prs"
-      >6</text>
+    <g class="stagger" style="animation-delay: 750ms">
+      <circle cx="5" cy="6" r="5" fill="#6E4C13" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        Assembly 6.52%
+      </text>
     </g>
-  </g><g transform="translate(0, 75)">
-    <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
-      
-      <text class="stat  bold"  y="12.5">Total Issues:</text>
-      <text
-        class="stat  bold"
-        x="204.01"
-        y="12.5"
-        data-testid="issues"
-      >1</text>
+  </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
+    <g class="stagger" style="animation-delay: 450ms">
+      <circle cx="5" cy="6" r="5" fill="#427819" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        Makefile 5.66%
+      </text>
     </g>
-  </g><g transform="translate(0, 100)">
-    <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
-      
-      <text class="stat  bold"  y="12.5">Contributed to (last year):</text>
-      <text
-        class="stat  bold"
-        x="204.01"
-        y="12.5"
-        data-testid="contribs"
-      >2</text>
+  </g><g transform="translate(0, 25)">
+    <g class="stagger" style="animation-delay: 600ms">
+      <circle cx="5" cy="6" r="5" fill="#DAE1C2" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        SystemVerilog 4.78%
+      </text>
     </g>
-  </g>
+  </g><g transform="translate(0, 50)">
+    <g class="stagger" style="animation-delay: 750ms">
+      <circle cx="5" cy="6" r="5" fill="#b2b7f8" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        Verilog 2.18%
+      </text>
+    </g>
+  </g></g>
+    </g>
+  
     </svg>
   
         </g>
