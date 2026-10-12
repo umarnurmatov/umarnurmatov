@@ -9,13 +9,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@v1
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
         with:
-          card: top-langs
-          options: username=${{ github.repository_owner }}&hide_border=false&include_all_commits=false&count_private=false&layout=compact&show_icons=true&hide=jupyter%20notebook&disable_animations=true&theme=tokyonight&card_width=400
+          card: stats
+          options: username=umarnurmatov\
+                   &layout=compact\
+                   &hide_title=true\
+                   &exclude_repo=dotfiles\
+                   &hide=jupyter%20notebook\
+                   &langs_count=6\
+                   &disable_animations=true&theme=dark
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
