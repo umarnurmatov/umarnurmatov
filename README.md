@@ -14,4 +14,4 @@
 ![CMake](https://img.shields.io/badge/Make-%23008FBA.svg?style=flat-square&logo=gnu&logoColor=white)
 
 ### Stats
-![Top Languages](./profile/top-langs.svg)
+![Top Languages](./profile/stats.svg)
