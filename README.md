@@ -1,5 +1,4 @@
 ### RTL stack
-[![SystemVerilog](https://img.shields.io/badge/Verilog-red?style=for-the-badge)](https://)
 [![SystemVerilog](https://img.shields.io/badge/SystemVerilog-red?style=for-the-badge)](https://)
 
 ### Programming stack
@@ -7,6 +6,7 @@
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Ruby](https://img.shields.io/badge/Ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
 
 ### Other
 ![GDB](https://img.shields.io/badge/-GDB-6E4C13?style=flat-square&logo=gnu)
