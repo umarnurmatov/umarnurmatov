@@ -2,16 +2,19 @@
 [![SystemVerilog](https://img.shields.io/badge/SystemVerilog-red?style=for-the-badge)](https://)
 
 ### Programming stack
+#### Languages
 ![x86 Assembly](https://img.shields.io/badge/-x86%20Assembly-525252?style=for-the-badge)
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Ruby](https://img.shields.io/badge/Ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
+#### Frameworks 
+![ESP-IDF](https://img.shields.io/badge/ESP--IDF-red?style=flat-square&logo=espressif&logoColor=white)
 
-### Other
-![GDB](https://img.shields.io/badge/-GDB-6E4C13?style=flat-square&logo=gnu)
-![CMake Badge](https://img.shields.io/badge/CMake-064F8C?logo=cmake&logoColor=fff&style=flat-square)
-![CMake](https://img.shields.io/badge/Make-%23008FBA.svg?style=flat-square&logo=gnu&logoColor=white)
+### Tools
+![GDB](https://img.shields.io/badge/-GDB-6E4C13?style=flat-square&logo=gnu&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-064F8C?logo=cmake&logoColor=fff&style=flat-square&logoColor=white)
+![Make](https://img.shields.io/badge/Make-%23008FBA.svg?style=flat-square&logo=gnu&logoColor=white)
 
 ### Stats
 ![Top Languages](./profile/stats.svg)
